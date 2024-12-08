@@ -10,7 +10,7 @@ const FeaturedSection: React.FC = () => {
       name: "Cantilever chair",
       code: "Y523201",
       price: "$42.00",
-      image: "/featured-1.png", 
+      image: "/featured-1.png", // Ensure the image is in the public folder
       isHighlighted: false,
     },
     {
@@ -58,7 +58,7 @@ const FeaturedSection: React.FC = () => {
             {/* Action Icons */}
             <div
               className={`absolute top-4 right-4 flex space-x-2 ${
-                product.isHighlighted ? "text-white" : "text-gray-500"
+                product.isHighlighted ? "text-gray-500" : "text-gray-500"
               }`}
             >
               <button className="p-2 rounded-full hover:bg-gray-200 transition">
@@ -84,7 +84,11 @@ const FeaturedSection: React.FC = () => {
             </div>
 
             {/* Product Info */}
-            <div className="p-4 text-center flex flex-col items-center justify-center space-y-2">
+            <div
+              className={`p-4 text-center flex flex-col items-center justify-center space-y-2 ${
+                product.isHighlighted ? "text-black" : "text-gray-900"
+              }`}
+            >
               <h3 className="text-lg font-semibold">{product.name}</h3>
               <p className="text-sm">Code - {product.code}</p>
               <p className="text-lg font-bold">{product.price}</p>
