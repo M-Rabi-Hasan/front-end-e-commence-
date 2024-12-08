@@ -7,6 +7,7 @@ import { FiShoppingCart, FiHeart, FiSearch, FiX } from "react-icons/fi";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isShopDropdownOpen, setIsShopDropdownOpen] = useState(false);
 
   return (
     <header className="bg-white overflow-x-hidden">
@@ -15,7 +16,7 @@ const Header: React.FC = () => {
         {/* Left Side */}
         <div className="flex items-center space-x-4">
           <span>abc@gmail.com</span>
-          <span>(12345)67890</span>
+          {/* <span>(12345)67890</span> */}
         </div>
 
         {/* Right Side */}
@@ -36,30 +37,35 @@ const Header: React.FC = () => {
       </div>
 
       {/* Main Header */}
-      <div className="mx-auto px-4 lg:px-12 py-4 shadow-md flex flex-wrap items-center justify-between">
+      <div className="mx-auto px-4 lg:px-12 py-4 shadow-md flex flex-wrap items-center justify-between relative">
         {/* Logo */}
         <h1 className="text-3xl font-bold text-purple-600">Hekto</h1>
 
         {/* Navigation Links */}
-        <nav className="hidden lg:flex items-center space-x-8">
-          <Link href="#home" className="text-gray-700 hover:text-pink-500">
+        <nav className="hidden lg:flex items-center space-x-8 relative">
+          <Link href="/" className="text-gray-700 hover:text-pink-500">
             Home
           </Link>
-          <Link href="#pages" className="text-gray-700 hover:text-pink-500">
+          {/* <Link href="#pages" className="text-gray-700 hover:text-pink-500">
             Pages
-          </Link>
-          <Link href="#products" className="text-gray-700 hover:text-pink-500">
+          </Link> */}
+          <Link href="/product" className="text-gray-700 hover:text-pink-500">
             Products
           </Link>
-          <Link href="#blog" className="text-gray-700 hover:text-pink-500">
+          {/* <Link href="#blog" className="text-gray-700 hover:text-pink-500">
             Blog
+          </Link> */}
+
+          <Link
+            href="/shop/shopping-cart"
+            className="block text-gray-700 hover:text-pink-500 transition-colors"
+          >
+            Shopping Cart
           </Link>
-          <Link href="#shop" className="text-gray-700 hover:text-pink-500">
-            Shop
-          </Link>
-          <Link href="#contact" className="text-gray-700 hover:text-pink-500">
+
+          {/* <Link href="#contact" className="text-gray-700 hover:text-pink-500">
             Contact
-          </Link>
+          </Link> */}
         </nav>
 
         {/* Search Bar */}
@@ -88,47 +94,85 @@ const Header: React.FC = () => {
         <div className="bg-white shadow-md mt-12 p-4 lg:hidden absolute top-16 left-0 right-0 z-50">
           <nav className="flex flex-col space-y-4">
             <Link
-              href="#home"
+              href="/"
               className="text-gray-700 font-medium hover:text-pink-500"
-              onClick={() => setIsMenuOpen(false)} 
+              onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
-            <Link
+            {/* <Link
               href="#pages"
               className="text-gray-700 font-medium hover:text-pink-500"
-              onClick={() => setIsMenuOpen(false)} 
+              onClick={() => setIsMenuOpen(false)}
             >
               Pages
-            </Link>
+            </Link> */}
             <Link
-              href="#products"
+              href="/product"
               className="text-gray-700 font-medium hover:text-pink-500"
-              onClick={() => setIsMenuOpen(false)} 
+              onClick={() => setIsMenuOpen(false)}
             >
               Products
             </Link>
-            <Link
+            {/* <Link
               href="#blog"
               className="text-gray-700 font-medium hover:text-pink-500"
-              onClick={() => setIsMenuOpen(false)} 
+              onClick={() => setIsMenuOpen(false)}
             >
               Blog
-            </Link>
-            <Link
-              href="#shop"
-              className="text-gray-700 font-medium hover:text-pink-500"
-              onClick={() => setIsMenuOpen(false)} 
-            >
-              Shop
-            </Link>
-            <Link
+            </Link> */}
+
+            {/* Mobile Shop Dropdown */}
+            {/* <div>
+              <button
+                onClick={() => setIsShopDropdownOpen(!isShopDropdownOpen)}
+                className="text-gray-700 font-medium hover:text-pink-500"
+              >
+                Shop ▼
+              </button>
+              {isShopDropdownOpen && (
+                <div className="pl-4 space-y-2">
+                  <Link
+                    href="/shop/grid-default"
+                    className="block text-gray-700 hover:text-pink-500"
+                  >
+                    Grid Default
+                  </Link>
+                  <Link
+                    href="/shop/shop-list"
+                    className="block text-gray-700 hover:text-pink-500"
+                  >
+                    Shop List
+                  </Link>
+                  <Link
+                    href="/shop/shop-left-sidebar"
+                    className="block text-gray-700 hover:text-pink-500"
+                  >
+                    Shop Left Sidebar
+                  </Link> */}
+                  <Link
+                    href="/shop/shopping-cart"
+                    className="block text-gray-900 hover:text-pink-500"
+                  >
+                    Shopping Cart
+                  </Link>
+                  {/* <Link
+                    href="/shop/order-completed"
+                    className="block text-gray-700 hover:text-pink-500"
+                  >
+                    Order Completed
+                  </Link>
+                </div>
+              )}
+            </div> */}
+
+            {/* <Link
               href="#contact"
               className="text-gray-700 font-medium hover:text-pink-500"
-              onClick={() => setIsMenuOpen(false)} 
+              onClick={() => setIsMenuOpen(false)}
             >
               Contact
-            </Link>
+            </Link> */}
           </nav>
         </div>
       )}
