@@ -7,7 +7,6 @@ import { FiShoppingCart, FiHeart, FiSearch, FiX } from "react-icons/fi";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isShopDropdownOpen, setIsShopDropdownOpen] = useState(false);
 
   return (
     <header className="bg-white overflow-x-hidden">
@@ -16,14 +15,11 @@ const Header: React.FC = () => {
         {/* Left Side */}
         <div className="flex items-center space-x-4">
           <span>abc@gmail.com</span>
-          {/* <span>(12345)67890</span> */}
         </div>
 
         {/* Right Side */}
         <div className="flex items-center space-x-6">
-          <div className="cursor-pointer">English ▼</div>
-          <div className="cursor-pointer">USD ▼</div>
-          <Link href="#login" className="hover:underline">
+          <Link href="/login" className="hover:underline">
             Login
           </Link>
           <Link href="#wishlist" className="hover:underline flex items-center">
@@ -46,15 +42,15 @@ const Header: React.FC = () => {
           <Link href="/" className="text-gray-700 hover:text-pink-500">
             Home
           </Link>
-          {/* <Link href="#pages" className="text-gray-700 hover:text-pink-500">
-            Pages
-          </Link> */}
+          <Link href="/aboutus" className="text-gray-700 hover:text-pink-500">
+            About us
+          </Link>
           <Link href="/product" className="text-gray-700 hover:text-pink-500">
             Products
           </Link>
-          {/* <Link href="#blog" className="text-gray-700 hover:text-pink-500">
+          <Link href="/blog" className="text-gray-700 hover:text-pink-500">
             Blog
-          </Link> */}
+          </Link>
 
           <Link
             href="/shop/shopping-cart"
@@ -63,9 +59,12 @@ const Header: React.FC = () => {
             Shopping Cart
           </Link>
 
-          {/* <Link href="#contact" className="text-gray-700 hover:text-pink-500">
+          <Link href="/contact" className="text-gray-700 hover:text-pink-500">
             Contact
-          </Link> */}
+          </Link>
+          <Link href="/faq" className="text-gray-700 hover:text-pink-500">
+            Faq
+          </Link>
         </nav>
 
         {/* Search Bar */}
@@ -100,13 +99,9 @@ const Header: React.FC = () => {
             >
               Home
             </Link>
-            {/* <Link
-              href="#pages"
-              className="text-gray-700 font-medium hover:text-pink-500"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Pages
-            </Link> */}
+            <Link href="/aboutus" className="text-gray-700 hover:text-pink-500">
+              About us
+            </Link>
             <Link
               href="/product"
               className="text-gray-700 font-medium hover:text-pink-500"
@@ -114,65 +109,29 @@ const Header: React.FC = () => {
             >
               Products
             </Link>
-            {/* <Link
-              href="#blog"
+            <Link
+              href="/blog"
               className="text-gray-700 font-medium hover:text-pink-500"
               onClick={() => setIsMenuOpen(false)}
             >
               Blog
-            </Link> */}
-
-            {/* Mobile Shop Dropdown */}
-            {/* <div>
-              <button
-                onClick={() => setIsShopDropdownOpen(!isShopDropdownOpen)}
-                className="text-gray-700 font-medium hover:text-pink-500"
-              >
-                Shop ▼
-              </button>
-              {isShopDropdownOpen && (
-                <div className="pl-4 space-y-2">
-                  <Link
-                    href="/shop/grid-default"
-                    className="block text-gray-700 hover:text-pink-500"
-                  >
-                    Grid Default
-                  </Link>
-                  <Link
-                    href="/shop/shop-list"
-                    className="block text-gray-700 hover:text-pink-500"
-                  >
-                    Shop List
-                  </Link>
-                  <Link
-                    href="/shop/shop-left-sidebar"
-                    className="block text-gray-700 hover:text-pink-500"
-                  >
-                    Shop Left Sidebar
-                  </Link> */}
-                  <Link
-                    href="/shop/shopping-cart"
-                    className="block text-gray-900 hover:text-pink-500"
-                  >
-                    Shopping Cart
-                  </Link>
-                  {/* <Link
-                    href="/shop/order-completed"
-                    className="block text-gray-700 hover:text-pink-500"
-                  >
-                    Order Completed
-                  </Link>
-                </div>
-              )}
-            </div> */}
-
-            {/* <Link
-              href="#contact"
+            </Link>
+            <Link
+              href="/shop/shopping-cart"
+              className="block text-gray-700 hover:text-pink-500 transition-colors"
+            >
+              Shopping Cart
+            </Link>
+            <Link
+              href="/contact"
               className="text-gray-700 font-medium hover:text-pink-500"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
-            </Link> */}
+            </Link>
+            <Link href="/faq" className="text-gray-700 hover:text-pink-500">
+              Faq
+            </Link>
           </nav>
         </div>
       )}

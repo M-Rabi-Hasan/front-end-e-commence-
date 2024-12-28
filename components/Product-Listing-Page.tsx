@@ -9,7 +9,7 @@ const products = [
   { id: 2, title: "Ultricies condimentum imperdiet", price: "$26.00", discount: "$42.00", image: "/Category-1.png" },
   { id: 2, title: "Ultricies condimentum imperdiet", price: "$26.00", discount: "$42.00", image: "/Category-3.png" },
   { id: 2, title: "Ultricies condimentum imperdiet", price: "$26.00", discount: "$42.00", image: "/Category-4.png" },
-  // Add remaining products here...
+  
 ];
 
 export default function ShopPage() {

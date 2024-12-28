@@ -44,7 +44,7 @@ const ProductHeroSection: React.FC = () => {
           {/* Main Image */}
           <div className="relative w-full h-96">
             <Image
-              src="/product-hero-4.png" // Replace with actual product image path
+              src="/product-hero-4.png" 
               alt="Main Product"
               layout="fill"
               objectFit="cover"

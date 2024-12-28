@@ -7,13 +7,13 @@ const ProductDescriptionSection: React.FC = () => {
 
   const tabs = ["Description", "Additional Info", "Reviews", "Video"];
 
-  // Check screen width and set isMobile
+  
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); // Set the initial state
+    handleResize(); 
     window.addEventListener("resize", handleResize);
 
     return () => {

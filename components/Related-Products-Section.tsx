@@ -8,7 +8,7 @@ const RelatedProducts: React.FC = () => {
       name: "Mens Fashion Wear",
       price: "$45.00",
       rating: 5,
-      image: "/productrelated-1.png", // Replace with actual image paths
+      image: "/productrelated-1.png", 
     },
     {
       id: 2,
@@ -82,7 +82,7 @@ const RelatedProducts: React.FC = () => {
       {/* Logo Section */}
       <div className="mt-12 flex justify-center">
         <Image
-          src="/newbanner-2.png" // Replace with actual path to logos
+          src="/newbanner-2.png" 
           alt="Brand Logos"
           width={600}
           height={100}

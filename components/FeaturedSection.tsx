@@ -10,7 +10,7 @@ const FeaturedSection: React.FC = () => {
       name: "Cantilever chair",
       code: "Y523201",
       price: "$42.00",
-      image: "/featured-1.png", // Ensure the image is in the public folder
+      image: "/featured-1.png", 
       isHighlighted: false,
     },
     {

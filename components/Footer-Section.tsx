@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               Sign Up
             </button>
           </form>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-400">
             Contact Info:
             <br />
             17 Princess Road, London, Greater London NW1 8JR, UK
@@ -28,19 +28,19 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-4">Categories</h3>
           <ul className="space-y-2">
-            <li className="text-gray-700 hover:text-pink-500">
+            <li className="text-gray-400 hover:text-pink-500">
               Laptops & Computers
             </li>
-            <li className="text-gray-700 hover:text-pink-500">
+            <li className="text-gray-400 hover:text-pink-500">
               Cameras & Photography
             </li>
-            <li className="text-gray-700 hover:text-pink-500">
+            <li className="text-gray-400 hover:text-pink-500">
               Smart Phones & Tablets
             </li>
-            <li className="text-gray-700 hover:text-pink-500">
+            <li className="text-gray-400 hover:text-pink-500">
               Video Games & Consoles
             </li>
-            <li className="text-gray-700 hover:text-pink-500">
+            <li className="text-gray-400 hover:text-pink-500">
               Waterproof Headphones
             </li>
           </ul>
@@ -50,11 +50,11 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-4">Customer Care</h3>
           <ul className="space-y-2">
-            <li className="text-gray-700 hover:text-pink-500">My Account</li>
-            <li className="text-gray-700 hover:text-pink-500">Discount</li>
-            <li className="text-gray-700 hover:text-pink-500">Returns</li>
-            <li className="text-gray-700 hover:text-pink-500">Orders History</li>
-            <li className="text-gray-700 hover:text-pink-500">Order Tracking</li>
+            <li className="text-gray-400 hover:text-pink-500">My Account</li>
+            <li className="text-gray-400 hover:text-pink-500">Discount</li>
+            <li className="text-gray-400 hover:text-pink-500">Returns</li>
+            <li className="text-gray-400 hover:text-pink-500">Orders History</li>
+            <li className="text-gray-400 hover:text-pink-500">Order Tracking</li>
           </ul>
         </div>
 
@@ -62,14 +62,14 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-4">Pages</h3>
           <ul className="space-y-2">
-            <li className="text-gray-700 hover:text-pink-500">Blog</li>
-            <li className="text-gray-700 hover:text-pink-500">Browse the Shop</li>
-            <li className="text-gray-700 hover:text-pink-500">Category</li>
-            <li className="text-gray-700 hover:text-pink-500">Pre-Built Pages</li>
-            <li className="text-gray-700 hover:text-pink-500">
+            <li className="text-gray-400 hover:text-pink-500">Blog</li>
+            <li className="text-gray-400 hover:text-pink-500">Browse the Shop</li>
+            <li className="text-gray-400 hover:text-pink-500">Category</li>
+            <li className="text-gray-400 hover:text-pink-500">Pre-Built Pages</li>
+            <li className="text-gray-400 hover:text-pink-500">
               Visual Composer Elements
             </li>
-            <li className="text-gray-700 hover:text-pink-500">
+            <li className="text-gray-400 hover:text-pink-500">
               WooCommerce Pages
             </li>
           </ul>
